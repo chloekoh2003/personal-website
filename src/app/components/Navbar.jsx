@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React, {useState} from 'react'
+import { useRouter } from 'next/router'
 import {AiOutlineClose, AiOutlineMenu, AiOutlineMail} from 'react-icons/ai'
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 
@@ -15,13 +16,13 @@ const Navbar = () => {
             <div className='container mx-auto h-full flex justify-end'>
                 <ul className='hidden md:flex mr-8 mt-8'>
                     <Link href="/#home">
-                        <li className='ml-10 text-md uppercase hover:underline hover:text-[#50afac]'>Home</li>
+                        <li className='ml-10 text-lg uppercase hover:underline hover:text-[#50afac]'>Home</li>
                     </Link>
                     <Link href="/#about">
-                        <li className='ml-10 text-md uppercase hover:underline hover:text-[#50afac]'>About Me</li>
+                        <li className='ml-10 text-lg uppercase hover:underline hover:text-[#50afac]'>About Me</li>
                     </Link>
                     <Link href="/#projects">
-                        <li className='ml-10 text-md uppercase hover:underline hover:text-[#50afac]'>Projects</li>
+                        <li className='ml-10 text-lg uppercase hover:underline hover:text-[#50afac]'>Projects</li>
                     </Link>
                 </ul>
                 <div onClick={handleNav} className='md:hidden cursor-pointer mr-4 mt-8'>
@@ -43,26 +44,26 @@ const Navbar = () => {
                     <div className='p-4 flex flex-col'>
                         <ul>
                             <Link href="/#home">
-                                <li className='py-4 text-sm uppercase hover:underline'>Home</li>
+                                <li className='py-4 text-md uppercase hover:underline'>Home</li>
                             </Link>
                             <Link href="/#about">
-                                <li className='py-4 text-sm uppercase hover:underline'>About Me</li>
+                                <li className='py-4 text-md uppercase hover:underline'>About Me</li>
                             </Link>
                             <Link href="/#projects">
-                                <li className='py-4 text-sm uppercase hover:underline'>Projects</li>
+                                <li className='py-4 text-md uppercase hover:underline'>Projects</li>
                             </Link>
                         </ul>
                         <div className='pt-40'>
                             <p className='uppercase tracking-wide text-[#50afac]'>Let's connect</p>
                             <div className='flex items-center my-4 sm:w-[80%]'>
                                 <div className='rounded-full shadow-lg p-3 mr-6 cursor-pointer hover:scale-110 ease-in-duration-500'>
-                                    <FaLinkedinIn className='text-[#AC50AF]'/>
+                                    <a href="https://www.linkedin.com/in/chloe-koh-32590523b/" target="_blank"><FaLinkedinIn className='text-[#AC50AF]'/></a>
                                 </div>
                                 <div className='rounded-full shadow-lg p-3 mr-6 cursor-pointer hover:scale-110 ease-in-duration-500'>
-                                    <FaGithub className='text-[#AC50AF]'/>
+                                    <a href="https://github.com/chloekoh2003" target="_blank"><FaGithub className='text-[#AC50AF]'/></a>
                                 </div>
                                 <div className='rounded-full shadow-lg p-3 mr-6 cursor-pointer hover:scale-110 ease-in-duration-500'>
-                                    <AiOutlineMail className='text-[#AC50AF]'/>
+                                    <a href="mailto:chloe.koh8@gmail.com"><AiOutlineMail className='text-[#AC50AF]'/></a>
                                 </div>
                             </div>
                         </div>

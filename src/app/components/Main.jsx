@@ -15,13 +15,13 @@ export const Main = () => {
             </p>
             <div className='flex items-center justify-between py-4'>
               <div className='rounded-full shadow-lg p-3 m-8 cursor-pointer hover:scale-105 ease-in-duration-500'>
-                <FaLinkedinIn className='text-[#AC50AF]'/>
+                <a href="https://www.linkedin.com/in/chloe-koh-32590523b/" target="_blank"><FaLinkedinIn className='text-[#AC50AF]'/></a>
               </div>
                <div className='rounded-full shadow-lg p-3 m-8 cursor-pointer hover:scale-105 ease-in-duration-500'>
-                 <FaGithub className='text-[#AC50AF]'/>
+                 <a href="https://github.com/chloekoh2003" target="_blank"><FaGithub className='text-[#AC50AF]'/></a>
               </div>
               <div className='rounded-full shadow-lg p-3 m-8 cursor-pointer hover:scale-105 ease-in-duration-500'>
-                <AiOutlineMail className='text-[#AC50AF]'/>
+                <a href="mailto:chloe.koh8@gmail.com"><AiOutlineMail className='text-[#AC50AF]'/></a>
               </div>
             </div>
         </div>

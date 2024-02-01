@@ -28,3 +28,9 @@ h1 {
   font-size: xx-large;
   font-weight: bold;
 }
+.main {
+  position: relative; /* Ensure the container has a position other than static */
+  height: 100vh; /* Set a height to make the particles visible in the viewport */
+}
+
+
