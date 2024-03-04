@@ -18,23 +18,47 @@ const projects = [
     },
     {
         name: 'Weather app',
-        description: 'Weather app made with React JS. Includes city search and shows temperature, humidty, and wind speed. ',
+        description: 'Weather app made with React JS. Includes city search and shows temperature, humidty, and wind speed.',
         image: '/images/weather.png',
         github: 'https://github.com/chloekoh2003/WeatherApp',
         link: 'https://weather-app-alpha-peach-77.vercel.app/'
     },
+    {
+        name: 'E-MPOWER',
+        description: 'Collaborated with a team to make an application that tracks the location of e-waste recycling bins and allows users to track their progress. It has a Spring Boot-based backend and VueJS-based frontend.',
+        image: '/images/empower.png',
+        github: 'https://github.com/zhiyisoh/e-mpower'
+    },
+    {
+        name: 'Campus Compass',
+        description: 'Collaborated with a team to develop a school recommendation web application, integrating the OneMap API for location-based functionalities.',
+        image: '/images/sr.png',
+        github: 'https://github.com/francis1009/CampusCompass'
+    },
+    {
+        name: 'Astro Boy',
+        description: 'Worked in a team of two, utilizing computer vision, arduino and 3d printing to create a camera attachment that added autofocus functionality to manual lenses for the purpose of astrophotography.',
+        image: '/images/astro.png',
+        github: 'https://github.com/chloekoh2003/astro-boy'
+    },
+    {
+        name: 'Snake Game',
+        description: 'Replicated the snake game using the Java Swing library.',
+        image: '/images/snake.png',
+        github: 'https://github.com/chloekoh2003/snakegame'
+    }
 ]
 
 export const Projects = () => {
   return (
-    <div id='projects' className=' mx-auto w-[80%] min-h-screen my-6 py-4 text-center'>
+    <div id='projects' className=' mx-auto w-[90%] min-h-screen my-6 py-4 text-center'>
         <h1 className='text-[#50afac] mb-10'>
             Projects
             <hr className='w-6 h-1 mx-auto my-4 bg-[#AC50AF] border-0 rounded'></hr>
         </h1>
-        <div className='flex flex-col mx-auto w-[80%] md:flex-row gap-6'>
+        <div className='flex flex-wrap justify-center gap-6'>
             {projects.map((project, idx) => (
-                <div key={idx}>
+                <div key={idx} className="sm:w-2/3 md:w-1/4 mb-6">
                     <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
                         <Image 
                             src={project.image} 
