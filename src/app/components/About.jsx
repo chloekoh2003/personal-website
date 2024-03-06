@@ -10,13 +10,13 @@ const skills= [
 export const About = () => {
   return (
     <div id='about' className=' mx-auto w-[80%] min-h-screen my-8 py-4 text-center'>
-        <h1 className='text-[#50afac] mb-10'>
+        <h1 className='text-[#FF9E00] mb-10'>
             About Me
-            <hr className='w-6 h-1 mx-auto my-4 bg-[#AC50AF] border-0 rounded'></hr>
+            <hr className='w-6 h-1 mx-auto my-4 bg-[#0061FF] border-0 rounded'></hr>
         </h1>
         <div className='flex flex-col md:flex-row gap-6'>
             <div className='md:w-[50%] my-4'>
-                <h2 className='text-center text-2xl font-bold mb-6 md:text-left text-[#AFAC50]'>Get to Know Me</h2>
+                <h3 className='text-center text-xl font-bold mb-6 md:text-left text-[#ffffff]'>Get to Know Me</h3>
                 <p className='text-left'>Hi, I'm Chloe. I am an aspiring Computer Science 
                 student currently in my third year of study at Singapore Management University. 
                 My journey in Computer Science started in high school where I learned Java as my very first
@@ -30,12 +30,12 @@ export const About = () => {
                 </p>
             </div>
             <div className='md:w-[50%] flex flex-col my-4'>
-                <h2 className='text-center text-2xl font-bold mb-6 md:text-left text-[#AFAC50]'>My Skills</h2>
+                <h3 className='text-center text-xl font-bold mb-6 md:text-left text-[#ffffff]'>My Skills</h3>
                 <div className='flex flex-wrap flex-row justify-center md:justify-start'>
                     {skills.map((skill) => (
                         <p
                             key={skill}
-                            className='p-2  rounded-sm  bg-black/10 m-2'>
+                            className='p-2  rounded-sm  bg-black/10 m-2 hover:text-[#FF9E00] hover:scale-105'>
                             {skill}
                         </p>
                     ))}

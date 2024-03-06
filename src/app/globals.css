@@ -19,19 +19,28 @@ html{
 
 @layer base {
   body {
-    @apply bg-[#333333] text-[white] tracking-wide
+    @apply bg-[#2d2d2d] text-[white] tracking-wide
   }
 }
 *{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family:'system-ui';
 }
 h1 {
   font-size: xx-large;
   font-weight: bold;
 }
 .main {
-  position: relative; /* Ensure the container has a position other than static */
-  height: 100vh; /* Set a height to make the particles visible in the viewport */
+  position: relative;
+  height: 100vh;
+}
+#projects{
+  position: relative;
+}
+#about{
+  position: relative;
+}
+#home{
+  position: relative;
 }
 
 

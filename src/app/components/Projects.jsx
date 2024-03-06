@@ -52,11 +52,11 @@ const projects = [
 export const Projects = () => {
   return (
     <div id='projects' className=' mx-auto w-[90%] min-h-screen my-6 py-4 text-center'>
-        <h1 className='text-[#50afac] mb-10'>
+        <h1 className='text-[#FF9E00] mb-10'>
             Projects
-            <hr className='w-6 h-1 mx-auto my-4 bg-[#AC50AF] border-0 rounded'></hr>
+            <hr className='w-6 h-1 mx-auto my-4 bg-[#0061FF] border-0 rounded'></hr>
         </h1>
-        <div className='flex flex-wrap justify-center gap-6'>
+        <div className='flex flex-wrap justify-center gap-6 shadow-xl'>
             {projects.map((project, idx) => (
                 <div key={idx} className="sm:w-2/3 md:w-1/4 mb-6">
                     <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
@@ -75,11 +75,11 @@ export const Projects = () => {
                         </div>
                         <div className="px-6 pt-4 pb-2">
                             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                                <a href={project.github} target="_blank"><FaGithub size={25} className='hover:text-[#AFAC50]'/></a>
+                                <a href={project.github} target="_blank"><FaGithub size={25} className='hover:text-[#0061FF] hover:scale-105'/></a>
                             </span>
                             {project.link ? 
                                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                                    <a href={project.link} target="_blank"><FaExternalLinkAlt size={25} className='hover:text-[#AFAC50]'/></a>
+                                    <a href={project.link} target="_blank"><FaExternalLinkAlt size={25} className='hover:text-[#0061FF] hover:scale-105'/></a>
                                 </span>
                             : <div></div>}
                         </div>
