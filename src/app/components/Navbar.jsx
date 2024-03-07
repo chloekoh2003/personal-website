@@ -16,13 +16,13 @@ const Navbar = () => {
             <div className='container mx-auto h-full flex justify-end'>
                 <ul className='hidden md:flex mr-8 mt-8'>
                     <Link href="/#home">
-                        <li className='ml-10 text-lg uppercase hover:underline hover:text-[#FF9E00]'>Home</li>
+                        <li className='ml-10 text-lg uppercase hover:underline'>Home</li>
                     </Link>
                     <Link href="/#about">
-                        <li className='ml-10 text-lg uppercase hover:underline hover:text-[#FF9E00]'>About Me</li>
+                        <li className='ml-10 text-lg uppercase hover:underline'>About Me</li>
                     </Link>
                     <Link href="/#projects">
-                        <li className='ml-10 text-lg uppercase hover:underline hover:text-[#FF9E00]'>Projects</li>
+                        <li className='ml-10 text-lg uppercase hover:underline'>Projects</li>
                     </Link>
                 </ul>
                 <div onClick={handleNav} className='md:hidden rounded-full cursor-pointer m-4 p-3 hover:bg-black/10'>
@@ -44,17 +44,17 @@ const Navbar = () => {
                     <div className='p-4 flex flex-col'>
                         <ul>
                             <Link href="/#home">
-                                <li className='py-4 text-md uppercase hover:text-[#FF9E00]'>Home</li>
+                                <li className='py-4 text-md uppercase hover:text-[#e9ff00]'>Home</li>
                             </Link>
                             <Link href="/#about">
-                                <li className='py-4 text-md uppercase hover:text-[#FF9E00]'>About Me</li>
+                                <li className='py-4 text-md uppercase hover:text-[#e9ff00]'>About Me</li>
                             </Link>
                             <Link href="/#projects">
-                                <li className='py-4 text-md uppercase hover:text-[#FF9E00]'>Projects</li>
+                                <li className='py-4 text-md uppercase hover:text-[#e9ff00]'>Projects</li>
                             </Link>
                         </ul>
                         <div className='pt-40'>
-                            <p className='uppercase tracking-wide text-[#FF9E00]'>Let's connect</p>
+                            <p className='uppercase tracking-wide text-[#e9ff00]'>Let's connect</p>
                             <div className='flex items-center my-4 sm:w-[80%]'>
                                 <div className='rounded-full shadow-lg p-3 mr-6 cursor-pointer hover:scale-110 ease-in-duration-500'>
                                     <a href="https://www.linkedin.com/in/chloe-koh-32590523b/" target="_blank"><FaLinkedinIn className='text-[#0061FF]'/></a>

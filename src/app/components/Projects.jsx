@@ -51,14 +51,14 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <div id='projects' className=' mx-auto w-[90%] min-h-screen my-6 py-4 text-center'>
-        <h1 className='text-[#FF9E00] mb-10'>
+    <div id='projects' className=' mx-auto w-full min-h-screen my-6 py-4 text-center'>
+        <h1 className='text-[#e9ff00] mb-10'>
             Projects
-            <hr className='w-6 h-1 mx-auto my-4 bg-[#0061FF] border-0 rounded'></hr>
+            <hr className='w-6 h-1 mx-auto my-4 bg-[#70a3f5] border-0 rounded'></hr>
         </h1>
         <div className='flex flex-wrap justify-center gap-6 shadow-xl'>
             {projects.map((project, idx) => (
-                <div key={idx} className="sm:w-2/3 md:w-1/4 mb-6">
+                <div key={idx} className="flex flex-col items-center mx-auto sm:w-2/3 md:w-1/4 mb-6">
                     <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
                         <Image 
                             src={project.image} 
