@@ -14,6 +14,8 @@ export const About = () => {
             About Me
             <hr className='w-6 h-1 mx-auto my-4 bg-[#0061FF] border-0 rounded'></hr>
         </h1>
+        <div className='leftBlur'></div>
+        <div className='rightBlur'></div>
         <div className='flex flex-col md:flex-row gap-6'>
             <div className='md:w-[50%] my-4'>
                 <h3 className='text-center text-xl font-bold mb-6 md:text-left text-[#ffffff]'>Get to Know Me</h3>

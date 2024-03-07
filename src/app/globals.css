@@ -19,15 +19,16 @@ html{
 
 @layer base {
   body {
-    @apply bg-[#2d2d2d] text-[white] tracking-wide
+    @apply bg-[#2c2c3e] text-[white] tracking-wide
   }
 }
 *{
-  font-family:'system-ui';
+  font-family:'Segoe UI';
 }
 h1 {
   font-size: xx-large;
   font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .main {
   position: relative;
@@ -41,6 +42,43 @@ h1 {
 }
 #home{
   position: relative;
+}
+.topBlur{
+  position: absolute;
+  height: 50vh;
+  width: 50vh;
+  min-width: 300px;
+  min-height: 300px;
+  top: 25vh;
+  background-color: #363c6a;
+  filter: blur(100px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -10;
+}
+.leftBlur{
+  position: absolute;
+  height: 40vh;
+  width: 40vh;
+  min-width: 300px;
+  min-height: 300px;
+  top: 40vh;
+  background-color: #363c6a;
+  filter: blur(100px);
+  left: -100px;
+  z-index: -10;
+}
+.rightBlur{
+  position: absolute;
+  height: 30vh;
+  width: 30vh;
+  min-width: 300px;
+  min-height: 300px;
+  top: 60vh;
+  background-color: #363c6a;
+  filter: blur(100px);
+  right: -128px;
+  z-index: -10;
 }
 
 

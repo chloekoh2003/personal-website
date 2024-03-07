@@ -12,7 +12,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className='fixed w-full h-20 shadow-xl z-[100] bg-[#333333]'>
+        <div className='fixed w-full h-20 shadow-xl z-[100] bg-[#2c2c3e]'>
             <div className='container mx-auto h-full flex justify-end'>
                 <ul className='hidden md:flex mr-8 mt-8'>
                     <Link href="/#home">
@@ -25,13 +25,13 @@ const Navbar = () => {
                         <li className='ml-10 text-lg uppercase hover:underline hover:text-[#FF9E00]'>Projects</li>
                     </Link>
                 </ul>
-                <div onClick={handleNav} className='md:hidden cursor-pointer mr-4 mt-8'>
+                <div onClick={handleNav} className='md:hidden rounded-full cursor-pointer m-4 p-3 hover:bg-black/10'>
                     <AiOutlineMenu size={25}/>
                 </div>
             </div>
             
             <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
-                <div className={nav ? ' fixed left-0 top-0 w-[80%] sm:w-[45%] md:w-[35%] h-screen bg-[#333333] p-10 ease-in-duration-500' 
+                <div className={nav ? ' fixed left-0 top-0 w-[80%] sm:w-[45%] md:w-[35%] h-screen bg-[#2c2c3e] p-10 ease-in-duration-500' 
                 : 'fixed left-[-100%] top-0  p-10 ease-in-duration-500'}>
                     <div>
                         <div className='flex w-full justify-end'>
