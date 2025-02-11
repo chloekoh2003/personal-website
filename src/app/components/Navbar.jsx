@@ -12,7 +12,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className='fixed w-full h-20 shadow-xl z-[100] bg-[#2c2c3e]'>
+        <div className='fixed w-full h-20 shadow-xl z-[100] bg-[#493dfc]'>
             <div className='container mx-auto h-full flex justify-end'>
                 <ul className='hidden md:flex mr-8 mt-8'>
                     <Link href="/#home">
@@ -31,7 +31,7 @@ const Navbar = () => {
             </div>
             
             <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
-                <div className={nav ? ' fixed left-0 top-0 w-[80%] sm:w-[45%] md:w-[35%] h-screen bg-[#2c2c3e] p-10 ease-in-duration-500' 
+                <div className={nav ? ' fixed left-0 top-0 w-[80%] sm:w-[45%] md:w-[35%] h-screen bg-[#493dfc] p-10 ease-in-duration-500' 
                 : 'fixed left-[-100%] top-0  p-10 ease-in-duration-500'}>
                     <div>
                         <div className='flex w-full justify-end'>
@@ -54,16 +54,16 @@ const Navbar = () => {
                             </Link>
                         </ul>
                         <div className='pt-40'>
-                            <p className='uppercase tracking-wide text-[#e9ff00]'>Let's connect</p>
+                            <p className='uppercase tracking-wide text-[#FFFFFF]'>Let's connect</p>
                             <div className='flex items-center my-4 sm:w-[80%]'>
                                 <div className='rounded-full shadow-lg p-3 mr-6 cursor-pointer hover:scale-110 ease-in-duration-500'>
-                                    <a href="https://www.linkedin.com/in/chloe-koh-32590523b/" target="_blank"><FaLinkedinIn className='text-[#0061FF]'/></a>
+                                    <a href="https://www.linkedin.com/in/chloe-koh-32590523b/" target="_blank"><FaLinkedinIn className='text-[#FFFFFF]'/></a>
                                 </div>
                                 <div className='rounded-full shadow-lg p-3 mr-6 cursor-pointer hover:scale-110 ease-in-duration-500'>
-                                    <a href="https://github.com/chloekoh2003" target="_blank"><FaGithub className='text-[#0061FF]'/></a>
+                                    <a href="https://github.com/chloekoh2003" target="_blank"><FaGithub className='text-[#FFFFFF]'/></a>
                                 </div>
                                 <div className='rounded-full shadow-lg p-3 mr-6 cursor-pointer hover:scale-110 ease-in-duration-500'>
-                                    <a href="mailto:chloe.koh8@gmail.com"><AiOutlineMail className='text-[#0061FF]'/></a>
+                                    <a href="mailto:chloe.koh8@gmail.com"><AiOutlineMail className='text-[#FFFFFF]'/></a>
                                 </div>
                             </div>
                         </div>

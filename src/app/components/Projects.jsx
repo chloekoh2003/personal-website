@@ -52,7 +52,7 @@ const projects = [
 export const Projects = () => {
   return (
     <div id='projects' className=' mx-auto w-full min-h-screen my-6 py-4 text-center'>
-        <h1 className='text-[#e9ff00] mb-10'>
+        <h1 className='text-[#f09ec0] mb-10'>
             Projects
             <hr className='w-6 h-1 mx-auto my-4 bg-[#70a3f5] border-0 rounded'></hr>
         </h1>

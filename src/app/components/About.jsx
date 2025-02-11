@@ -10,7 +10,7 @@ const skills= [
 export const About = () => {
   return (
     <div id='about' className=' mx-auto w-[80%] min-h-screen my-8 py-4 text-center'>
-        <h1 className='text-[#e9ff00] mb-10'>
+        <h1 className='text-[#f09ec0] mb-10'>
             About Me
             <hr className='w-6 h-1 mx-auto my-4 bg-[#70a3f5] border-0 rounded'></hr>
         </h1>
@@ -18,9 +18,9 @@ export const About = () => {
         <div className='rightBlur'></div>
         <div className='flex flex-col md:flex-row gap-6'>
             <div className='md:w-[50%] my-4'>
-                <h3 className='text-center text-xl font-bold mb-6 md:text-left text-[#FBFF93]'>Get to Know Me</h3>
+                <h3 className='text-center text-xl font-bold mb-6 md:text-left text-[#FFFFFF]'>Get to Know Me</h3>
                 <p className='text-left'>Hi, I'm Chloe. I am an aspiring Computer Science 
-                student currently in my third year of study at Singapore Management University. 
+                student currently in my final year of study at Singapore Management University. 
                 My journey in Computer Science started in high school where I learned Java as my very first
                 programming language. Since then I have learned other programming languages and gained a foundation
                 in areas such as data structures, software development, and database management. I also have an 
@@ -32,12 +32,12 @@ export const About = () => {
                 </p>
             </div>
             <div className='md:w-[50%] flex flex-col my-4'>
-                <h3 className='text-center text-xl font-bold mb-6 md:text-left text-[#FBFF93]'>My Skills</h3>
+                <h3 className='text-center text-xl font-bold mb-6 md:text-left text-[#FFFFFF]'>My Skills</h3>
                 <div className='flex flex-wrap flex-row justify-center md:justify-start'>
                     {skills.map((skill) => (
                         <p
                             key={skill}
-                            className='p-2  rounded-sm  bg-black/10 m-2 hover:text-[#e9ff00] hover:scale-105'>
+                            className='p-2  rounded-sm  bg-black/10 m-2 hover:text-[#f09ec0] hover:scale-105'>
                             {skill}
                         </p>
                     ))}

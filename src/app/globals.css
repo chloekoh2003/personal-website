@@ -19,7 +19,7 @@ html{
 
 @layer base {
   body {
-    @apply bg-[#2c2c3e] text-[white] tracking-wide
+    @apply bg-[#011282] text-[white] tracking-wide
   }
 }
 *{
@@ -50,7 +50,7 @@ h1 {
   min-width: 300px;
   min-height: 300px;
   top: 25vh;
-  background-color: #363c6a;
+  background-color: #f09ec0;
   filter: blur(100px);
   left: 50%;
   transform: translateX(-50%);
@@ -63,7 +63,7 @@ h1 {
   min-width: 300px;
   min-height: 300px;
   top: 40vh;
-  background-color: #363c6a;
+  background-color: #f09ec0;
   filter: blur(100px);
   left: -100px;
   z-index: -10;
@@ -75,7 +75,7 @@ h1 {
   min-width: 300px;
   min-height: 300px;
   top: 60vh;
-  background-color: #363c6a;
+  background-color: #f09ec0;
   filter: blur(100px);
   right: -128px;
   z-index: -10;
